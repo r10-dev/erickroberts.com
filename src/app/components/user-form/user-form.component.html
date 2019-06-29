@@ -1,0 +1,25 @@
+<div id="userform" class="container mx-auto max-w-lg p-12">
+  <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div class="form-group">
+      <label for="username" class="block text-gray-700 text-sm font-bold mb-2">User Name</label>
+      <input type="text" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="userName"
+             [(ngModel)]="model.username" name="userName" placeholder="Enter a New User" >
+    </div>
+    <div class="form-group">
+      <label for="email" class="block text-gray-700 text-sm font-bold mb-2">User Name</label>
+      <input type="email" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email"
+             [(ngModel)]="model.email" name="email" placeholder="Enter an Email Address" >
+    </div>
+    <div class="form-group pt-4">
+      <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Enter a Password</label>
+      <input type="password" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password"
+             [(ngModel)]="model.password" name="password" placeholder="Enter a Super Secret Password" >
+    </div>
+    <div class="form-group" class="py-4">
+      <label for="isAuthor" class="pr-4">I am an Author</label>
+      <input type="checkbox" class="form-control pl-4" id="isAuthor"
+             [(ngModel)]="model.isauthor" name="isAuthor">
+    </div>
+    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" [disabled]="!userForm.form.valid">Submit</button>
+  </form>
+</div>

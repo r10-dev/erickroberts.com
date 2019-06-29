@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {butterService} from '../services';
+import { butterService } from 'src/app/services/butterCMS.service';
 
 @Component({
     selector: 'app-blog-post-listing',

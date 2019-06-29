@@ -1,0 +1,34 @@
+<div class="hp-modal pt-12 flex flex-row justify-around">
+  <div class="w-1/2 font-mysans">
+    <div class="text-2xl pb-6">Hello, I am Erick! What is your name?</div>
+    <div class="text-lg">
+      <p>I hope you will let me know that you stopped by!</p>
+
+      <p class="m-4 text-gray-600">Whether you are a friend or family or a potential client or employer, I promise there will not be crazy email updates.</p>
+      <p class="m-4 text-gray-600">I commit to establish contact with you personally to connect with you once you have signed up and figure out what camp you fit into. </p>
+      <p class="m-4 mt-4 text-gray-600">I commit to establish contact with you personally to connect with you once you have signed up and figure out what camp you fit into. </p>
+    </div>
+  </div>
+  <div id="userform" *ngIf="showForm" class="container mx-auto w-1/2 p-6">
+    
+    <form (ngSubmit)="submit()" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h1 class="text-2xl">Help me, Help you!</h1>
+      <div class="form-group p-6">
+        <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Your name or handle</label>
+        <input type="text"
+          class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="userName" [formControl]="nameControl" name="userName" placeholder="Enter a user name or your name.">
+      </div>
+      <div class="form-group p-6">
+        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">A good email address</label>
+        <input type="email"
+          class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="email" [formControl]="emailControl" name="email" placeholder="Enter an Email Address">
+      </div>
+
+      <button type="submit"
+        class="bg-blue-500 hover:bg-blue-700 text-white text-lg m-6 font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="hp-modal-background"></div>
