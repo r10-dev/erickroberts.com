@@ -1,31 +1,161 @@
-
-
-
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import '~@angular/material/theming';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-.equal_column_spacer {
-  display: flex;
-  justify-content: space-between;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 :not(div.post-body){
+  font-size: inherit;
+  font-weight: inherit;
 }
 
-.equal_column_center {
-  display: flex;
-  justify-content: center;
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre :not(div.post-body){
+  margin: 0;
 }
 
-.page-title, .page-body {
-  padding: 10px 5px;
+.roundimg
+{
+    border-radius: 50%;
+}
+.active
+{
+    color: #4299e1;
+}
+.mobileactive
+{
+    color: #3182ce;
+    margin-left: 2rem
+}
+.font-mysans
+{
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-.page-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0;
+.font-myserif
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-fancy
+{
+    font-family: 'Merriweather', serif;
+}
+
+.mx-body{
+    
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+h1.post-body{
+    @apply text-4xl;
+    @apply font-mysans;
+    @apply mx-auto;
+    @apply my-6;
+}
+
+div.post-body h2{
+    @apply text-3xl;
+    @apply text-gray-700;
+    @apply font-mysans;
+    @apply p-2;
+}
+div.post-body h3{
+    @apply text-2xl;
+    @apply text-blue-600;
+    @apply font-mysans;
+    @apply p-2;
+}
+div.post-body p{
+    @apply text-lg;
+    @apply text-black;
+    @apply font-mysans;
+    @apply p-4;
+}
+
+
+div.post-body blockquote {
+    @apply font-mysans;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    font-style: italic;
+    width: 500px;
+    margin: 0.25em 0;
+    padding: 0.25em 40px;
+    line-height: 1.45;
+    position: relative;
+  }
+  div.post-body  blockquote:before {
+    
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    color: #7a7a7a;
+  }
+
+
+  div.post-body blockquote h4 {
+    
+    @apply text-xl;
+    @apply text-black;
+    @apply font-bold;
+    display: inline;
+  }
+
+  @keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+.bounceme {  
+  
+  
+  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+}
+.bounceme:hover {
+   
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
 }
