@@ -2,7 +2,6 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MailchimpResponse } from '../../interfaces/mailchimp-response';
 import { FormControl, Validators } from '@angular/forms';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import {MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-opt-in',
@@ -14,7 +13,7 @@ export class OptInComponent implements OnInit {
   submitted = false;
   mailChimpEndpoint = 'https://shelfsquirrel.us7.list-manage.com/subscribe/post-json?u=34d4610eb82d0527700c77b6c&amp;id=7eb69635ec&';
   showForm = true;
-  constructor(private client: HttpClient, public dialogRef: MatDialogRef<OptInComponent>) { }
+  constructor(private client: HttpClient) { }
 
   // start of reactive formcontrol instances
   emailControl = new FormControl('',

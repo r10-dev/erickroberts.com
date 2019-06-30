@@ -28,10 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/twstyles.css",
-              "src/styles.scss"
-              
-
+              "src/twstyles.css"
               
             ],
             "scripts": []

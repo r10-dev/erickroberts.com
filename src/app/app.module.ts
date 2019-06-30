@@ -9,7 +9,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {BlogPostDetailsComponent} from './components/blog-post-details/blog-post-details.component';
 import {BlogPostListingComponent} from './components/blog-post-listing/blog-post-listing.component';
-import { AppMaterialModule } from './shared';
+import { AppMaterialModule } from './shared/app-material.module';
 import { ContentFormComponent } from './components/content-form/content-form.component';
 import { UserLoginComponent } from './components/user-login/user-login.component';
 import { ResumeComponent } from './components/resume/resume.component';
@@ -21,6 +21,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { OptInComponent } from './components/opt-in/opt-in.component';
 import { SafehtmlPipe } from './pipes/safehtml.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,

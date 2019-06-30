@@ -11,22 +11,10 @@ export class HomePageComponent implements OnInit {
 
   constructor(private dialog: MatDialog) { }
 
-  openDialog(): void {
-    const dialogRef = this.dialog
-      .open(OptInComponent, {
-        width: '65%',
-        height: '75%'
-      });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
-  }
-
 
 
   ngOnInit() {
-     // this.openDialog();
+   
   }
 
 }

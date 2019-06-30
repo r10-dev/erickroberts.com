@@ -1,10 +1,10 @@
-<div class="mx-body mt-8">
-  <h1 class="post-body">
+<div class="mx-body mt-8 sm:mx-4">
+  <h1 class="post-body text-center">
     {{post.data?.title}}
   </h1>
   
   <div class="clearfix" >
-  <div class="w-1/2 float-right ">
+  <div class="w-1/2 float-right sm:w-full sm:mb-8 ">
    <img class="rounded-lg" *ngIf="post.data.featured_image" src="{{post.data.featured_image}}" alt="featured image"/>
   </div>
  
