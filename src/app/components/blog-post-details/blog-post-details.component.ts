@@ -22,12 +22,13 @@ export class BlogPostDetailsComponent implements OnInit {
         data: null
     };
 
-    ngOnInit() {
+    getSlug() {
         this.slug$ = this.route.paramMap
-            .pipe(
-                map(params => (params.get('slug')))
-            );
-
+        .pipe(
+            map(params => (params.get('slug')))
+        );
+    }
+    processSlug() {
         this.slug$.pipe(
             take(1))
             .subscribe(slug => {
@@ -38,5 +39,9 @@ export class BlogPostDetailsComponent implements OnInit {
                     console.log(res);
                 });
             });
+    }
+    ngOnInit() {
+        this.getSlug();
+        this.processSlug();
     }
 }

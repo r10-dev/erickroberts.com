@@ -8,7 +8,7 @@
    <img class="rounded-lg" *ngIf="post.data.featured_image" src="{{post.data.featured_image}}" alt="featured image"/>
   </div>
  
-  <div class="post-body" [innerHTML]="post.data?.body | safehtml"></div>
+  <div class="post-body" [innerHTML]="post.data?.body"></div>
   
 
 

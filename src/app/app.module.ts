@@ -20,7 +20,7 @@ import { PodcastHomeComponent } from './components/podcast-home/podcast-home.com
 import { ContactComponent } from './components/contact/contact.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { OptInComponent } from './components/opt-in/opt-in.component';
-import { SafehtmlPipe } from './pipes/safehtml.pipe';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +37,6 @@ import { SafehtmlPipe } from './pipes/safehtml.pipe';
     PodcastHomeComponent,
     ContactComponent,
     OptInComponent,
-    SafehtmlPipe
   ],
   imports: [
     BrowserModule,
@@ -53,6 +52,5 @@ import { SafehtmlPipe } from './pipes/safehtml.pipe';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [OptInComponent]
 })
 export class AppModule { }

@@ -9,12 +9,11 @@ import { OptInComponent } from '../opt-in/opt-in.component';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor(private dialog: MatDialog) { }
+  constructor() { }
 
 
 
   ngOnInit() {
-   
   }
 
 }

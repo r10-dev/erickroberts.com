@@ -1,5 +1,5 @@
 import { Content } from './content';
-import { toDate } from '@angular/common/src/i18n/format_date';
+import { formatDate } from '@angular/common';
 
 describe('Content', () => {
   const _content = new Content({
@@ -12,7 +12,7 @@ describe('Content', () => {
     draft: true,
     slug: 'url-short-name',
     title: 'url-long-name',
-    headerimage: 'image to an amzing article',
+    headerimage: 'image to an amazing article',
     tabimage: 'smaller image to amazing article',
     body: 'an amazing body for an amazing article',
     created_on: new Date(1559818832),
@@ -21,7 +21,6 @@ describe('Content', () => {
   let content;
 
   beforeEach(() => {
-    
     content = {
       contentid: 1,
       authorid: 1,
@@ -32,7 +31,7 @@ describe('Content', () => {
       draft: true,
       slug: 'url-short-name',
       title: 'url-long-name',
-      headerimage: 'image to an amzing article',
+      headerimage: 'image to an amazing article',
       tabimage: 'smaller image to amazing article',
       body: 'an amazing body for an amazing article',
       created_on: new Date(1559818832),
