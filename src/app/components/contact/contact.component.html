@@ -1,21 +1,20 @@
-<div class="">
-    <div>
-
-    </div>
+<div class="mx-20 sm:mx-4 md:mx-10 ">
     <div>
         <app-opt-in></app-opt-in>
     </div>
-    <div class="mx-body flex flex-row align-content-around h-20 mt-10">
-        <svg class="icon fill-current text-blue-500 p-2">
+</div>
+<div class="mx-body sm:mx-4">
+    <div class="flex flex-row align-content-between h-20 mt-10">
+        <svg class="icon fill-current text-blue-500" (click)="click_Twitter()">
             <use xlink:href="#twitter" />
         </svg>
-        <svg class="icon fill-current text-blue-700 p-2">
+        <svg class="icon fill-current text-blue-700" (click)="click_Linkedin()">
             <use xlink:href="#linkedin" />
         </svg>
-        <svg class="icon fill-current text-red-500 p-2">
+        <svg class="icon fill-current text-red-500 "(click)="click_Email()">
             <use xlink:href="#email_icon " />
         </svg>
-        <svg class="icon  fill-current text-green-500 p-2">
+        <svg class="icon " (click)="click_Phone()">
             <use xlink:href="#phone_icon" />
         </svg>
     </div>
