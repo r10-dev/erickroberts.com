@@ -2,8 +2,12 @@
     <!--Main Navigation component <Home Services Portfolio Podcast Devs Normal People Contact>-->
  
     <div id="headshot" class="w-40 sm:w-20">
-        <a routerLink="/" routerLinkActive="active"><img class="bounceme roundimg w-60 shadow-2xl "
-                src="../assets/leftlook.jpg"></a>
+        <a routerLink="/" routerLinkActive="active">
+                
+                <cl-image secure="true" public-id="leftlook_ougfcq" class="cat_image bounceme" format="jpg">
+                    <cl-transformation radius="max"></cl-transformation>
+                </cl-image>
+            </a>
     </div>
     <div id="header" class="flex flex-col ml-20 align-middle">
         <div id="title">
@@ -14,7 +18,7 @@
         <div id="menubar" class="flex flex-row justify-between font-mysans text-blue-600">
             <a id="portfoliolink" routerLink="/portfolio-home" routerLinkActive="active">Portfolio</a>
             <a id="bloglink" routerLink="/blog" routerLinkActive="active">Blog</a>
-            <a id="resumelink" routerLink="/resume" routerLinkActive="active">Resume</a>
+            <a id="resumelink" routerLink="/podcast" routerLinkActive="active">Podcast</a>
             <a id="podcastlink" routerLink="/podcast" routerLinkActive="active">Video</a>
             <a id="contactlink" routerLink="/contact" routerLinkActive="active">Contact</a>
         </div>

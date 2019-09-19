@@ -20,7 +20,8 @@ import { PodcastHomeComponent } from './components/podcast-home/podcast-home.com
 import { ContactComponent } from './components/contact/contact.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { OptInComponent } from './components/opt-in/opt-in.component';
-
+import { CloudinaryModule } from '@cloudinary/angular-5.x';
+import * as  Cloudinary from 'cloudinary-core';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { OptInComponent } from './components/opt-in/opt-in.component';
         HttpClientModule,
         HttpClientJsonpModule,
         ReactiveFormsModule,
+        CloudinaryModule.forRoot(Cloudinary, { cloud_name: 'erickroberts-com'}),
   ],
   providers: [],
   bootstrap: [AppComponent],

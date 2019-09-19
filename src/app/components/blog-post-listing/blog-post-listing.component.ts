@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import { butterService } from 'src/app/services/butterCMS.service';
+import { BlogpostService } from '../../services/blogposts/blogpost.service';
+
 
 @Component({
     selector: 'app-blog-post-listing',
@@ -9,16 +10,13 @@ import { butterService } from 'src/app/services/butterCMS.service';
 export class BlogPostListingComponent implements OnInit {
     public posts: any[];
 
-    constructor() {
+    constructor(private blog: BlogpostService) {
     }
-
+    thumb_filter = 'media_lib_thumb';
     ngOnInit() {
-        butterService.post.list({
-            page: 1,
-            page_size: 10
-        }).then((res) => {
-            this.posts = res.data.data;
-        });
+        this.blog.list()
+        .then( (result) => {this.posts = result; })
+        .catch( (error) => {console.log(error); });
     }
 
 }
