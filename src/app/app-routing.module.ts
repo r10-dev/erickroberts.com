@@ -11,6 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { PodcastHomeComponent } from './components/podcast-home/podcast-home.component';
 import { OptInComponent } from './components/opt-in/opt-in.component';
+import {BookingsComponent} from './bookings/bookings.component';
 const routes: Routes = [
   { path: '', component: HomePageComponent},
   { path: 'user-form', component: UserFormComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'home', component: HomePageComponent},
   { path: 'podcast', component: PodcastHomeComponent},
+  { path: 'bookings', component: BookingsComponent},
 ];
 
 @NgModule({

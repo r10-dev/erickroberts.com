@@ -22,6 +22,7 @@ import { UserFormComponent } from './components/user-form/user-form.component';
 import { OptInComponent } from './components/opt-in/opt-in.component';
 import { CloudinaryModule } from '@cloudinary/angular-5.x';
 import * as  Cloudinary from 'cloudinary-core';
+import { BookingsComponent } from './bookings/bookings.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import * as  Cloudinary from 'cloudinary-core';
     PodcastHomeComponent,
     ContactComponent,
     OptInComponent,
+    BookingsComponent,
   ],
   imports: [
     BrowserModule,

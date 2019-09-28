@@ -1,9 +1,9 @@
 <div id="main" class="flex flex-row my-10 justify-center sm:hidden">
     <!--Main Navigation component <Home Services Portfolio Podcast Devs Normal People Contact>-->
- 
+
     <div id="headshot" class="w-40 sm:w-20">
         <a routerLink="/" routerLinkActive="active">
-                
+
                 <cl-image secure="true" public-id="leftlook_ougfcq" class="cat_image bounceme" format="jpg">
                     <cl-transformation radius="max"></cl-transformation>
                 </cl-image>
@@ -12,21 +12,20 @@
     <div id="header" class="flex flex-col ml-20 align-middle">
         <div id="title">
             <a id="homelink" routerLink="/" routerLinkActive="active">
-                <h1 class=" englarge-border text-6xl font-myserif text-blue-800">Erick Roberts</h1>
+                <h1 class=" englarge-border text-6xl text-title text-blue-800">Erick Roberts</h1>
             </a>
         </div>
         <div id="menubar" class="flex flex-row justify-between font-mysans text-blue-600">
             <a id="portfoliolink" routerLink="/portfolio-home" routerLinkActive="active">Portfolio</a>
             <a id="bloglink" routerLink="/blog" routerLinkActive="active">Blog</a>
-            <a id="resumelink" routerLink="/podcast" routerLinkActive="active">Podcast</a>
-            <a id="podcastlink" routerLink="/podcast" routerLinkActive="active">Video</a>
+            <a id="resumelink" routerLink="/bookings" routerLinkActive="active">Hire Me!</a>
             <a id="contactlink" routerLink="/contact" routerLinkActive="active">Contact</a>
         </div>
     </div>
  </div>
 <div id="main_mobile" class="md:hidden ">
     <div id="mobile header" class="bg-blue-800 flex flex-row justify-between">
-        <h1 class=" ml-3 text-4xl font-myserif text-white py-2">Erick Roberts</h1>
+        <h1 class=" ml-3 text-4xl text-title py-2">Erick Roberts</h1>
         <div id="burger" *ngIf="!burgerShow" class="fill-current text-white h-16 w-16 pt-2" (click)="burgerClick()">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 100 100" style="enable-background:new 0 0 60.123 60.123;" xml:space="preserve">
@@ -70,7 +69,7 @@
            <g>
            </g>
            </svg>
-           
+
         </div>
     </div>
     <div id="topnav" *ngIf="burgerShow" class="flex flex-col max-w-full justify-around align-middle bg-blue-100 text-black" (click)="burgerClick()">
@@ -85,6 +84,6 @@
         <div id="headshot" class="container mx-auto w-32 ">
             <img class="roundimg shadow-xl" src="../assets/leftlook.jpg">
         </div>
-       
+
     </div>
 </div>

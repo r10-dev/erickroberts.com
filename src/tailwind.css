@@ -1,13 +1,44 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-@import url('https://fonts.googleapis.com/css?family=Martel|Merriweather|Montserrat|Nunito|Nunito+Sans&display=swap');
 
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import url("https://use.typekit.net/fpn1wvf.css");
+
+.text-para-reg {
+  font-family: cora, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-para-bold{
+  font-family: cora, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+text-para-i{
+  font-family: cora, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+text-title{
+  font-family: amboy-inline, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.text-title{
+  font-family: amboy-inline, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 h1,
@@ -50,21 +81,21 @@ pre :not(div.post-body){
 }
 .font-mysans
 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'cora', sans-serif;
 }
 
 .font-myserif
 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'freight-text-pro', serif;
 }
 
 .font-fancy
 {
-    font-family: 'Merriweather', serif;
+    font-family: 'big-caslon-fb', serif;
 }
 
 .mx-body{
-    
+
     margin-left: 25%;
     margin-right: 25%;
 }
@@ -73,7 +104,7 @@ div.post-body h1{
     @apply text-4xl;
     @apply font-mysans;
     @apply mx-auto;
-    @apply my-4; 
+    @apply my-4;
     @apply text-gray-700
 }
 
@@ -118,12 +149,12 @@ div.post-body blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
     font-style: italic;
-    
+
     line-height: 1.45;
     position: relative;
   }
   div.post-body  blockquote:before {
-    
+
     display: block;
     content: "\201C";
     font-size: 80px;
@@ -135,7 +166,7 @@ div.post-body blockquote {
 
 
   div.post-body blockquote h4 {
-    
+
     @apply text-xl;
     @apply text-black;
     @apply font-bold;
@@ -159,8 +190,8 @@ div.post-body blockquote {
 		transform:         translateY(-15px)
 	}
 }
-.bounceme {  
-  
+.bounceme {
+
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -172,7 +203,7 @@ div.post-body blockquote {
 
 }
 .bounceme:hover {
-   
+
     cursor: pointer;
     animation-name: bounce;
     -moz-animation-name: bounce;
