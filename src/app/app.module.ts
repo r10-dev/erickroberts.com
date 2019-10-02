@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {enableProdMode, NgModule} from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,8 +21,13 @@ import { ContactComponent } from './components/contact/contact.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { OptInComponent } from './components/opt-in/opt-in.component';
 import { CloudinaryModule } from '@cloudinary/angular-5.x';
-import * as  Cloudinary from 'cloudinary-core';
+import { Cloudinary as CloudinaryCore } from 'cloudinary-core';
+
 import { BookingsComponent } from './bookings/bookings.component';
+
+export const cloudinary = {
+  Cloudinary: CloudinaryCore
+};
 
 @NgModule({
   declarations: [
@@ -52,7 +57,7 @@ import { BookingsComponent } from './bookings/bookings.component';
         HttpClientModule,
         HttpClientJsonpModule,
         ReactiveFormsModule,
-        CloudinaryModule.forRoot(Cloudinary, { cloud_name: 'erickroberts-com'}),
+        CloudinaryModule.forRoot(cloudinary, { cloud_name: 'erickroberts-com'}),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -2,17 +2,16 @@
   <h1 class="post-body text-center">
     {{post.title}}
   </h1>
-  
+
   <div class="clearfix" >
   <div class="w-1/2 float-right sm:w-full sm:mb-8 ">
     <cl-image secure="true" public-id={{post.headerimage}} class="featured_image rounded-lg" format="jpg">
-      <cl-transformation [attr.transformation]="blogtab">
-      </cl-transformation>
+
     </cl-image>
   </div>
- 
+
   <div class="post-body" [innerHTML]="post.body"></div>
-  
+
 
 
 
